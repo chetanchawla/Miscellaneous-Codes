@@ -10,9 +10,15 @@ class Division {
  
   a = input.nextInt();
   b = input.nextInt();
+  try{
+  	result = a / b;
  
-  result = a / b;
- 
-  System.out.println("Result = " + result);
+	System.out.println("Result = " + result);
+	}
+  catch(ArithmeticException e){
+  	System.out.println("Exception caught: Divide by zero");
+    System.out.println(e);
+  }
+
 }
 }
